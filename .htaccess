@@ -1,0 +1,13 @@
+DirectoryIndex index.php index.html
+Options -Indexes
+LimitRequestBody 0
+
+<IfModule mod_mime.c>
+  AddType video/mp4 mp4 m4v
+  AddType video/webm webm
+  AddType video/x-matroska mkv
+  php_value upload_max_filesize 2G
+  php_value post_max_size 2G
+  php_value max_execution_time 600
+  php_value max_input_time 600
+</IfModule>
